@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Number-counter</title>
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="icon" href="images/images.jpg">
+   <style>
+      body {
+         width: 100%;
+         height: 100vh;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         gap: 20px;
+         flex-direction: column;
+         background: linear-gradient(130deg, rgb(51, 63, 51), rgb(3, 16, 20));
+
+      }
+
+      .box {
+         width: 200px;
+         height: 200px;
+         background: #000000;
+         border: 2px solid white;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         box-shadow: 0px 0px 13px 3px rgba(255, 255, 255, 0.75);
+      }
+
+      .result {
+         text-align: center;
+         color: white;
+         font-size: 35px;
+         text-shadow: 6px 1px 2px rgba(208, 177, 177, 0.36);
+         letter-spacing: 2px;
+      }
+
+      .main_div {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         gap: 30px;
+      }
+
+      .allValue {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         flex-direction: column;
+         gap: 30px;
+      }
+
+      .tagValue {
+         display: flex;
+         justify-content: center;
+         /* gap: 30px; */
+         align-items: center;
+      }
+
+      button {
+         width: 40px;
+         height: 30px;
+         background: #000;
+         color: white;
+         font-size: 15px;
+
+      }
+
+      input {
+         width: 150px;
+         height: 30px;
+         border: 2px solid white;
+         font-size: 15px;
+         padding-left: 5px;
+
+      }
+
+      h2 {
+         color: white;
+         margin-bottom: 30px;
+      }
+
+      p,
+      span {
+         font-size: 14px;
+         color: white;
+         text-align: center;
+         margin-right: 20px;
+         top: 10px;
+         display: inline-block;
+      }
+
+      .countN {
+         font-size: 14px;
+         font-weight: 600;
+         margin-top: 30px;
+         width: 120px;
+         background-color: #000;
+         color: white;
+         height: 40px;
+         border: 2px solid white;
+         border-radius: 5px;
+         box-shadow: 0px 1px 3px 3px rgba(255, 255, 255, 0.75);
+      }
+   </style>
+</head>
+
+<body>
+
+   <h2> Give an value for counte.</h2>
+   <div class="main_div">
+      <div class="allValue">
+         <div class="tagValue">
+            <p>Countiog from 0 to <span class="spanNumber"></span></p>
+            <input class="oneInput" type="number" placeholder="Enter an value">
+            <button onclick="oneButton(0)">Go</button>
+         </div>
+         <div class="box">
+            <h1 class="result" data-number=""></h1>
+         </div>
+      </div>
+      <div class="allValue">
+         <div class="tagValue">
+            <p>Countiog from 0 to <span class="spanNumber"></span></p>
+            <input class="oneInput" type="number" placeholder="Enter an value">
+            <button onclick="oneButton(1)">Go</button>
+         </div>
+         <div class="box">
+            <h1 class="result" data-number=""></h1>
+         </div>
+      </div>
+      <div class="allValue">
+         <div class="tagValue">
+            <p>Countiog from 0 to <span class="spanNumber"></span></p>
+            <input class="oneInput" type="number" placeholder="Enter an value">
+            <button onclick="oneButton(2)">Go</button>
+         </div>
+         <div class="box">
+            <h1 class="result" data-number=""></h1>
+         </div>
+      </div>
+
+   </div>
+
+   <button class="countN" onclick="countN()">Let's count</button>
+
+
+
+   <script src="Js/script.js"></script>
+</body>
+
+</html>
